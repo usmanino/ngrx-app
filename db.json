@@ -1,0 +1,18 @@
+{
+    "customers": [
+        {
+            "name": "Vincent Ojo",
+            "phone": "09066678888",
+            "address": "122 Ajnlekoko Str",
+            "membership": "Platium",
+            "id": 1
+        },
+        {
+            "name": "Olalekan Ogunsakin",
+            "phone": "76888889999",
+            "address": "404 Wole Str",
+            "membership": "Pro",
+            "id": 2
+        }
+    ]
+}
