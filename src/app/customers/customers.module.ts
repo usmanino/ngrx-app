@@ -6,7 +6,9 @@ import { CustomersEditComponent } from './customers-edit/customers-edit.componen
 import { CustomersListComponent } from './customers-list/customers-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
-import {customerReducer} from './state/customer.reducer';
+import { customerReducer } from './state/customer.reducer';
+import { EffectsModule, Actions } from '@ngrx/effects'
+import { CustomerEffect } from './state/customer.effect'
 
 const customersRoutes: Routes = [
   {
@@ -23,7 +25,8 @@ const customersRoutes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(customersRoutes),
-    StoreModule.forFeature("customers", customerReducer)
+    StoreModule.forFeature("customers", customerReducer),
+    EffectsModule.forFeature([CustomerEffect])
   ],
   declarations: [
     CustomersComponent,
