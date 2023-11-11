@@ -1,39 +1,18 @@
 {
-    "customers": [
-        {
-            "name": "Vincent Ojo Peter",
-            "phone": "09066678888",
-            "address": "122 Ajnlekoko Str",
-            "membership": "Platium",
-            "id": 1
-        },
-        {
-            "name": "Olalekan Ogunsakin",
-            "phone": "76888889999",
-            "address": "404 Wole Str",
-            "membership": "Pro",
-            "id": 2
-        },
-        {
-            "name": "Blessing Eze",
-            "phone": "1122334455",
-            "address": "789 Blessings Ave",
-            "membership": "Gold",
-            "id": 3
-        },
-        {
-            "name": "Chinedu Okoro",
-            "phone": "5544332211",
-            "address": "56 Okoro Close",
-            "membership": "Basic",
-            "id": 4
-        },
-        {
-            "name": "Sarah Ahmed",
-            "phone": "9876543210",
-            "address": "23 Ahmed Lane",
-            "membership": "Platium",
-            "id": 5
-        }
-    ]
+  "customers": [
+    {
+      "name": "Chinedu Okoro",
+      "phone": "5544332211",
+      "address": "56 Okoro",
+      "membership": "Basic",
+      "id": 4
+    },
+    {
+      "name": "Joseph Nanmen",
+      "phone": "+2349030693781",
+      "address": "Sango",
+      "membership": "Gold",
+      "id": 5
+    }
+  ]
 }

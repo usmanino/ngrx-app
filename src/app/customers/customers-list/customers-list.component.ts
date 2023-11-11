@@ -16,7 +16,7 @@ import { Customer } from "../customer.model";
   styleUrls: ['./customers-list.component.css']
 })
 export class CustomersListComponent implements OnInit {
-  customers!: Observable<Customer[]>;
+  customers$!: Observable<Customer[]>;
   error$!: Observable<string>;
 
 
@@ -27,17 +27,17 @@ export class CustomersListComponent implements OnInit {
 
   ngOnInit() {
     this.store.dispatch(new customerActions.LoadCustomers());
-    this.customers = this.store.pipe(select(fromCustomer.getCustomers));
-    // this.error$ = this.store.pipe(select(fromCustomer.getError));
+    this.customers$ = this.store.pipe(select(fromCustomer.getCustomers));
+    this.error$ = this.store.pipe(select(fromCustomer.getError));
   }
 
-  // deleteCustomer(customer: Customer) {
-  //   if (confirm("Are You Sure You want to Delete the User?")) {
-  //     this.store.dispatch(new customerActions.DeleteCustomer(customer.id!));
-  //   }
-  // }
+  deleteCustomer(customer: Customer) {
+    if (confirm("Are You Sure You want to Delete the User?")) {
+      this.store.dispatch(new customerActions.DeleteCustomer(customer.id!));
+    }
+  }
 
-  // editCustomer(customer: Customer) {
-  //   this.store.dispatch(new customerActions.LoadCustomer(customer.id!));
-  // }
+  editCustomer(customer: Customer) {
+    this.store.dispatch(new customerActions.LoadCustomer(customer.id!));
+  }
 }

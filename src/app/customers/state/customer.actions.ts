@@ -9,18 +9,18 @@ export enum CustomerActionTypes {
     LOAD_CUSTOMERS = "[Customer] Load Customers",
     LOAD_CUSTOMERS_SUCCESS = "[Customer] Load Customers Success",
     LOAD_CUSTOMERS_FAIL = "[Customer] Load Customers Fail",
-    // LOAD_CUSTOMER = "[Customer] Load Customer",
-    // LOAD_CUSTOMER_SUCCESS = "[Customer] Load Customer Success",
-    // LOAD_CUSTOMER_FAIL = "[Customer] Load Customer Fail",
-    // CREATE_CUSTOMER = "[Customer] Create Customer",
-    // CREATE_CUSTOMER_SUCCESS = "[Customer] Create Customer Success",
-    // CREATE_CUSTOMER_FAIL = "[Customer] Create Customer Fail",
-    // UPDATE_CUSTOMER = "[Customer] Update Customer",
-    // UPDATE_CUSTOMER_SUCCESS = "[Customer] Update Customer Success",
-    // UPDATE_CUSTOMER_FAIL = "[Customer] Update Customer Fail",
-    // DELETE_CUSTOMER = "[Customer] Delete Customer",
-    // DELETE_CUSTOMER_SUCCESS = "[Customer] Delete Customer Success",
-    // DELETE_CUSTOMER_FAIL = "[Customer] Delete Customer Fail"
+    LOAD_CUSTOMER = "[Customer] Load Customer",
+    LOAD_CUSTOMER_SUCCESS = "[Customer] Load Customer Success",
+    LOAD_CUSTOMER_FAIL = "[Customer] Load Customer Fail",
+    CREATE_CUSTOMER = "[Customer] Create Customer",
+    CREATE_CUSTOMER_SUCCESS = "[Customer] Create Customer Success",
+    CREATE_CUSTOMER_FAIL = "[Customer] Create Customer Fail",
+    UPDATE_CUSTOMER = "[Customer] Update Customer",
+    UPDATE_CUSTOMER_SUCCESS = "[Customer] Update Customer Success",
+    UPDATE_CUSTOMER_FAIL = "[Customer] Update Customer Fail",
+    DELETE_CUSTOMER = "[Customer] Delete Customer",
+    DELETE_CUSTOMER_SUCCESS = "[Customer] Delete Customer Success",
+    DELETE_CUSTOMER_FAIL = "[Customer] Delete Customer Fail"
 
 }
 
@@ -40,91 +40,91 @@ export class LoadCustomersFail implements store.Action {
     constructor(public payload: string) { }
 }
 
-// export class LoadCustomer implements store.Action {
-//     readonly type = CustomerActionTypes.LOAD_CUSTOMER;
+export class LoadCustomer implements store.Action {
+    readonly type = CustomerActionTypes.LOAD_CUSTOMER;
 
-//     constructor(public payload: number) { }
-// }
+    constructor(public payload: number) { }
+}
 
-// export class LoadCustomerSuccess implements store.Action {
-//     readonly type = CustomerActionTypes.LOAD_CUSTOMER_SUCCESS;
+export class LoadCustomerSuccess implements store.Action {
+    readonly type = CustomerActionTypes.LOAD_CUSTOMER_SUCCESS;
 
-//     constructor(public payload: Customer) { }
-// }
+    constructor(public payload: Customer) { }
+}
 
-// export class LoadCustomerFail implements store.Action {
-//     readonly type = CustomerActionTypes.LOAD_CUSTOMER_FAIL;
+export class LoadCustomerFail implements store.Action {
+    readonly type = CustomerActionTypes.LOAD_CUSTOMER_FAIL;
 
-//     constructor(public payload: string) { }
-// }
+    constructor(public payload: string) { }
+}
 
-// export class CreateCustomer implements store.Action {
-//     readonly type = CustomerActionTypes.CREATE_CUSTOMER;
+export class CreateCustomer implements store.Action {
+    readonly type = CustomerActionTypes.CREATE_CUSTOMER;
 
-//     constructor(public payload: Customer) { }
-// }
+    constructor(public payload: Customer) { }
+}
 
-// export class CreateCustomerSuccess implements store.Action {
-//     readonly type = CustomerActionTypes.CREATE_CUSTOMER_SUCCESS;
+export class CreateCustomerSuccess implements store.Action {
+    readonly type = CustomerActionTypes.CREATE_CUSTOMER_SUCCESS;
 
-//     constructor(public payload: Customer) { }
-// }
+    constructor(public payload: Customer) { }
+}
 
-// export class CreateCustomerFail implements store.Action {
-//     readonly type = CustomerActionTypes.CREATE_CUSTOMER_FAIL;
+export class CreateCustomerFail implements store.Action {
+    readonly type = CustomerActionTypes.CREATE_CUSTOMER_FAIL;
 
-//     constructor(public payload: string) { }
-// }
+    constructor(public payload: string) { }
+}
 
-// export class UpdateCustomer implements store.Action {
-//     readonly type = CustomerActionTypes.UPDATE_CUSTOMER;
+export class UpdateCustomer implements store.Action {
+    readonly type = CustomerActionTypes.UPDATE_CUSTOMER;
 
-//     constructor(public payload: Customer) { }
-// }
+    constructor(public payload: Customer) { }
+}
 
-// export class UpdateCustomerSuccess implements store.Action {
-//     readonly type = CustomerActionTypes.UPDATE_CUSTOMER_SUCCESS;
+export class UpdateCustomerSuccess implements store.Action {
+    readonly type = CustomerActionTypes.UPDATE_CUSTOMER_SUCCESS;
 
-//     constructor(public payload: Update<Customer>) { }
-// }
+    constructor(public payload: Update<Customer>) { }
+}
 
-// export class UpdateCustomerFail implements store.Action {
-//     readonly type = CustomerActionTypes.UPDATE_CUSTOMER_FAIL;
+export class UpdateCustomerFail implements store.Action {
+    readonly type = CustomerActionTypes.UPDATE_CUSTOMER_FAIL;
 
-//     constructor(public payload: string) { }
-// }
+    constructor(public payload: string) { }
+}
 
-// export class DeleteCustomer implements store.Action {
-//     readonly type = CustomerActionTypes.DELETE_CUSTOMER;
+export class DeleteCustomer implements store.Action {
+    readonly type = CustomerActionTypes.DELETE_CUSTOMER;
 
-//     constructor(public payload: number) { }
-// }
+    constructor(public payload: number) { }
+}
 
-// export class DeleteCustomerSuccess implements store.Action {
-//     readonly type = CustomerActionTypes.DELETE_CUSTOMER_SUCCESS;
+export class DeleteCustomerSuccess implements store.Action {
+    readonly type = CustomerActionTypes.DELETE_CUSTOMER_SUCCESS;
 
-//     constructor(public payload: number) { }
-// }
+    constructor(public payload: number) { }
+}
 
-// export class DeleteCustomerFail implements store.Action {
-//     readonly type = CustomerActionTypes.DELETE_CUSTOMER_FAIL;
+export class DeleteCustomerFail implements store.Action {
+    readonly type = CustomerActionTypes.DELETE_CUSTOMER_FAIL;
 
-//     constructor(public payload: string) { }
-// }
+    constructor(public payload: string) { }
+}
 
 export type Action =
     | LoadCustomers
     | LoadCustomersSuccess
     | LoadCustomersFail
-// | LoadCustomer
-// | LoadCustomerSuccess
-// | LoadCustomerFail
-// | CreateCustomer
-// | CreateCustomerSuccess
-// | CreateCustomerFail
-// | UpdateCustomer
-// | UpdateCustomerSuccess
-// | UpdateCustomerFail
-// | DeleteCustomer
-// | DeleteCustomerSuccess
-// | DeleteCustomerFail;
+    | LoadCustomer
+    | LoadCustomerSuccess
+    | LoadCustomerFail
+    | CreateCustomer
+    | CreateCustomerSuccess
+    | CreateCustomerFail
+    | UpdateCustomer
+    | UpdateCustomerSuccess
+    | UpdateCustomerFail
+    | DeleteCustomer
+    | DeleteCustomerSuccess
+    | DeleteCustomerFail;
