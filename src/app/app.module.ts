@@ -9,6 +9,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 import { AppRoutingModule } from './app-routing.module'
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component'
+import { customerReducer } from './customers/state/customer.reducer';
 
 
 
@@ -20,7 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component'
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot(),
     StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot([]),
     HttpClientModule,
